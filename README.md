@@ -1,4 +1,2 @@
-# core-java
-Some exercises in learning Java.
-
-
+# cuke-driven-java
+Some exercises in Java using Cucumber to test.

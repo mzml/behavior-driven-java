@@ -2,7 +2,7 @@ Ability: Build a pyramid with code
 
   Scenario: build a pyramid in the console given a height
     Given I want a pyramid with height 4
-    Then it should create this pyramid in the console
+    Then it should create it in the console
     """
     1
     1 2
