@@ -8,19 +8,19 @@ public class Pyramid {
         this.height = height;
     }
 
-    public void printToConsole() {
+    public void drawToConsole() {
         System.out.print(buildPyramid());
     }
 
     public String buildPyramid() {
         for (int i = 1; i <= height; ++i) {
             for (int j = 1; j <= i; ++j) {
-                if (i == j) {
-                    pyramid += j + "\n";
-
-                } else {
-                    pyramid += j + " ";
-                }
+                pyramid += (i == j) ? (j + "\n") : (j + " ");
+            }
+        }
+        for (int i = height; i > 0; --i) {
+            for (int j = 1; j <= i; j++) {
+                pyramid += (j == i) ? (j + "\n") : (j + " ");
             }
         }
         return pyramid;
