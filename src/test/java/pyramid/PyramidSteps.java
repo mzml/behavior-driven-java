@@ -1,9 +1,7 @@
 package pyramid;
 
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-
-import java.io.*;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
 
 import static org.junit.Assert.assertEquals;
 
@@ -16,7 +14,7 @@ public class PyramidSteps {
         pyramid = new Pyramid(height);
     }
 
-    @Then("it should create it in the console")
+    @When("it should create it in the console")
     public void it_should_create_it_in_the_console(String testPyramid) {
         assertEquals(testPyramid, pyramid.buildPyramid());
     }
