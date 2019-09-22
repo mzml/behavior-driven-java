@@ -1,4 +1,4 @@
-Ability: Build a pyramid with code
+Ability: Pyramid builder
 
   Scenario: build a pyramid in the console given a height
     Given I want a pyramid with height 4

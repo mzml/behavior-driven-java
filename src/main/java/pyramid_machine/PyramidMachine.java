@@ -1,15 +1,11 @@
-package pyramid;
+package pyramid_machine;
 
-public class Pyramid {
+public class PyramidMachine implements PyramidBuilder {
     private Integer height;
     private String pyramid = "";
 
-    public Pyramid(Integer height) {
+    PyramidMachine(Integer height) {
         this.height = height;
-    }
-
-    public void drawToConsole() {
-        System.out.print(buildPyramid());
     }
 
     public String buildPyramid() {
@@ -18,11 +14,12 @@ public class Pyramid {
                 pyramid += (i == j) ? (j + "\n") : (j + " ");
             }
         }
-        for (int i = height; i > 0; --i) {
+        for (int i = height - 1; i > 0; --i) {
             for (int j = 1; j <= i; j++) {
                 pyramid += (j == i) ? (j + "\n") : (j + " ");
             }
         }
+        pyramid = pyramid.substring(0, pyramid.length() - 1);
         return pyramid;
     }
 }

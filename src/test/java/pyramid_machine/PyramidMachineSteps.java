@@ -1,17 +1,17 @@
-package pyramid;
+package pyramid_machine;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 
 import static org.junit.Assert.assertEquals;
 
-public class PyramidSteps {
+public class PyramidMachineSteps {
 
-    private Pyramid pyramid;
+    private PyramidMachine pyramid;
 
     @Given("I want a pyramid with height {int}")
     public void i_want_a_pyramid_with_height(Integer height) {
-        pyramid = new Pyramid(height);
+        pyramid = new PyramidMachine(height);
     }
 
     @When("it should create it in the console")
