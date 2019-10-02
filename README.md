@@ -9,4 +9,3 @@ Tools and techniques for testing Java applications.
   - integrations
   - functionality
   - APIs
-  - interactive interfaces
