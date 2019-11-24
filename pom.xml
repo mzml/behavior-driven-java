@@ -12,6 +12,7 @@
         <java.version>1.8</java.version>
         <cucumber.version>4.8.0</cucumber.version>
         <maven.compiler.version>3.3</maven.compiler.version>
+        <assertj.version>3.13.2</assertj.version>
     </properties>
 
     <dependencies>
@@ -30,7 +31,7 @@
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
-            <version>3.13.2</version>
+            <version>${assertj.version}</version>
         </dependency>
     </dependencies>
 
