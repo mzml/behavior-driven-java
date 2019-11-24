@@ -4,4 +4,4 @@
 .classpath
 target/
 .project
-core-java.iml
+*.iml

@@ -1,9 +1,9 @@
-package pyramid_machine;
+package io.mzml.cukedriven;
 
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
 
-import static org.junit.Assert.assertEquals;
+import static org.testng.Assert.assertEquals;
 
 public class PyramidMachineSteps {
 
@@ -14,7 +14,7 @@ public class PyramidMachineSteps {
         pyramid = new PyramidMachine(height);
     }
 
-    @When("it should create it in the console")
+    @Then("it should create it in the console")
     public void it_should_create_it_in_the_console(String testPyramid) {
         assertEquals(testPyramid, pyramid.buildPyramid());
     }

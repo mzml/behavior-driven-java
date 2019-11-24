@@ -1,4 +1,4 @@
-package pyramid_machine;
+package io.mzml.cukedriven;
 
 public class PyramidMachine implements PyramidBuilder {
     private Integer height;
