@@ -1,19 +1,17 @@
 package io.mzml.mockito;
 
-public class StringHelper {
+class StringHelper {
     private String textInput;
 
-    public String truncateAInFirst2Positions(String textInput) {
-        String output = textInput.replace("A", "");
-
-        return output;
+    String truncateAInFirst2Positions(String textInput) {
+        return textInput.substring(0, 2).replace("A", "").concat(textInput.substring(2));
     }
 
-    public void setTextInput(String textInput) {
+    void setTextInput(String textInput) {
         this.textInput = textInput;
     }
 
-    public String getTextInput() {
+    String getTextInput() {
         return textInput;
     }
 }
