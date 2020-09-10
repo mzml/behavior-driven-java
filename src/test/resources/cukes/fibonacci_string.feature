@@ -8,10 +8,11 @@ Ability: fibonacci string
   Scenario Outline: the <n>th fibonacci string is formed
     Then the <n>th fibonacci returns <string>
     Examples:
-      | n | string          |
-      | 0 | "0"             |
-      | 1 | "01"            |
-      | 2 | "010"           |
-      | 3 | "01001"         |
-      | 4 | "01001010"      |
-      | 5 | "0100101001001" |
+      | n | string                  |
+      | 0 | "0"                     |
+      | 1 | "01"                    |
+      | 2 | "010"                   |
+      | 3 | "01001"                 |
+      | 4 | "01001010"              |
+      | 5 | "0100101001001"         |
+      | 6 | "010010100100101001010" |
