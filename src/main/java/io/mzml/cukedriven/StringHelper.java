@@ -1,7 +1,7 @@
-package io.mzml.mockito;
+package io.mzml.cukedriven;
 
 class StringHelper {
-    private String textInput;
+    public String textInput;
 
     String truncateAInFirst2Positions(String textInput) {
         return textInput.substring(0, 2).replace("A", "").concat(textInput.substring(2));

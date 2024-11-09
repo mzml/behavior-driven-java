@@ -1,4 +1,4 @@
-package io.mzml.mockito;
+package io.mzml.cukedriven;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
