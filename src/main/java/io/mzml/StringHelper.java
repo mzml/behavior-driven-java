@@ -1,13 +1,13 @@
-package io.mzml.cukedriven;
+package io.mzml;
 
-class StringHelper {
+public class StringHelper {
     public String textInput;
 
-    String truncateAInFirst2Positions(String textInput) {
+    public String truncateAInFirst2Positions(String textInput) {
         return textInput.substring(0, 2).replace("A", "").concat(textInput.substring(2));
     }
 
-    void setTextInput(String textInput) {
+    public void setTextInput(String textInput) {
         this.textInput = textInput;
     }
 

@@ -1,4 +1,4 @@
-package io.mzml.cukedriven;
+package io.mzml;
 
 public class SingleCharacterPalindrome {
 

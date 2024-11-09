@@ -1,10 +1,10 @@
-package io.mzml.cukedriven;
+package io.mzml;
 
 public class PyramidMachine implements PyramidBuilder {
     private Integer height;
     private String pyramid = "";
 
-    PyramidMachine(Integer height) {
+    public PyramidMachine(Integer height) {
         this.height = height;
     }
 
