@@ -12,10 +12,13 @@ repositories {
 }
 
 dependencies {
-    // Spock test dependencies
     implementation(platform("org.apache.groovy:groovy-bom:4.0.24"))
     implementation("org.apache.groovy:groovy")
+
     testImplementation("org.spockframework:spock-core:2.4-M1-groovy-4.0")
+    testImplementation("org.spockframework:spock-junit4:2.4-M4-groovy-4.0")
+
+    testImplementation("org.assertj:assertj-core:3.11.1")
 
     testImplementation(platform("org.junit:junit-bom:5.11.3"))
     testImplementation("org.junit.platform:junit-platform-suite")
