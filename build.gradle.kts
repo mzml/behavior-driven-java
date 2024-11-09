@@ -1,5 +1,6 @@
 plugins {
-    id("java")
+    java
+    groovy
 }
 
 group = "io.mzml"
@@ -11,13 +12,24 @@ repositories {
 }
 
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.11.3"))
-    testImplementation(platform("io.cucumber:cucumber-bom:7.20.1"))
+    // Spock test dependencies
+    implementation(platform("org.apache.groovy:groovy-bom:4.0.24"))
+    implementation("org.apache.groovy:groovy")
+    testImplementation("org.spockframework:spock-core:2.4-M1-groovy-4.0")
 
-    testImplementation("io.cucumber:cucumber-java")
-    testImplementation("io.cucumber:cucumber-junit-platform-engine")
+    testImplementation(platform("org.junit:junit-bom:5.11.3"))
     testImplementation("org.junit.platform:junit-platform-suite")
     testImplementation("org.junit.jupiter:junit-jupiter")
+
+    testImplementation(platform("io.cucumber:cucumber-bom:7.20.1"))
+    testImplementation("io.cucumber:cucumber-java")
+    testImplementation("io.cucumber:cucumber-junit-platform-engine")
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+    }
 }
 
 tasks.withType<Test> {
