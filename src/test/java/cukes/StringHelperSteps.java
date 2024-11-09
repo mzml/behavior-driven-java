@@ -1,7 +1,6 @@
 package cukes;
 
 import io.cucumber.java.en.Then;
-import io.mzml.StringHelper;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

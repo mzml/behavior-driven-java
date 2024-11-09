@@ -1,4 +1,4 @@
-package io.mzml;
+package cukes;
 
 public interface PyramidBuilder {
     String buildPyramid();

@@ -2,7 +2,6 @@ package cukes;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.mzml.PyramidMachine;
 import org.junit.jupiter.api.Assertions;
 
 public class PyramidMachineSteps {
