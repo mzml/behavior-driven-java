@@ -1,4 +1,4 @@
-package cukes;
+package io.mzml.cukes;
 
 public class StringHelper {
     public String textInput;

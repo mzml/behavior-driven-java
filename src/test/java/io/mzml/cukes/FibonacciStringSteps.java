@@ -1,6 +1,7 @@
-package cukes;
+package io.mzml.cukes;
 
 import io.cucumber.java.en.Then;
+import io.mzml.cukes.FibonacciString;
 import org.junit.jupiter.api.Assertions;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
